@@ -10,6 +10,8 @@ const cnt_subreg = document.getElementById("country_subreg");
 const cnt_cptl = document.getElementById("country_cptl");
 const cnt_pop = document.getElementById("country_pop");
 
+const errorBox = document.getElementById("errorBox");
+
 const search = document.getElementById("input");
 const submit = document.getElementById("submit");
 
@@ -44,16 +46,14 @@ submit.addEventListener("click", () => {
           cnt_pop.innerHTML = out.population;
         } else {
           //DISPLAY ERROR
+          errorBox.classList.remove("hidden");
+          errorBox.classList.add("showing");
+          window.setTimeout(() => {
+            errorBox.classList.add("hidden");
+            errorBox.classList.remove("showing");
+          }, 6000);
         }
       })
       .catch(err => console.error(err));
   }
 });
-
-//ERROR FUNCTION
-error = () => {
-  console.error("EMPTY or ILLEGAL search term");
-  alert(
-    "EMPTY or ILLEGAL search term \n See: https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes"
-  );
-};

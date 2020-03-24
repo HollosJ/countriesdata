@@ -50,6 +50,39 @@ h1 {
   font-size: 100%;
   border: none;
 }
+/* ERROR BOX */
+#errorBox {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #0e153a;
+  color: #fff;
+  width: 80%;
+  min-height: 50px;
+  height: 10%;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+#errorBox a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#errorBox a:hover {
+  color: #22d1ee;
+}
+.hidden {
+  display: none;
+}
+.showing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /*MAIN CONTENT*/
 #content {
@@ -140,7 +173,6 @@ span {
   #flag {
     grid-column: 1;
     grid-row: 1;
-    height: ;
     width: 100%;
   }
   #squares__codes {
