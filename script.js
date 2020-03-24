@@ -35,7 +35,7 @@ submit.addEventListener("click", () => {
           //alpha3code
           cnt_alpha3.innerHTML = out.alpha3Code;
           //topLevelDomain
-          cnt_tld.innerHTML = out.topLevelDomain;
+          cnt_tld.innerHTML = out.topLevelDomain[0];
           //region
           cnt_reg.innerHTML = out.region + ": ";
           //subregion
