@@ -25,27 +25,18 @@ submit.addEventListener("click", () => {
       .then(res => res.json())
       .then(out => {
         if (!out.status) {
-          console.log("Output: ", out);
-          //flag
+          //Changing HTML contents
           cnt_flag.src = out.flag;
-          //name
           cnt_name.innerHTML = out.name;
-          //alpha2code
           cnt_alpha2.innerHTML = out.alpha2Code;
-          //alpha3code
           cnt_alpha3.innerHTML = out.alpha3Code;
-          //topLevelDomain
           cnt_tld.innerHTML = out.topLevelDomain[0];
-          //region
           cnt_reg.innerHTML = out.region + ": ";
-          //subregion
           cnt_subreg.innerHTML = out.subregion;
-          //capital
           cnt_cptl.innerHTML = out.capital;
-          //population
           cnt_pop.innerHTML = out.population;
         } else {
-          //DISPLAY ERROR
+          //Display error
           errorBox.classList.remove("hidden");
           errorBox.classList.add("showing");
           window.setTimeout(() => {
