@@ -15,12 +15,8 @@
     <div id="header">
       <h1>Country Data API</h1>
       <div id="search">
-        <input
-          type="text"
-          name="input"
-          id="input"
-          placeholder="Enter valid Alpha2/Alpha3 country code..."
-        />
+        <select name="dropSearch" id="dropSearch">
+        </select>
         <button id="submit"><i class="fas fa-search-location"></i></button>
       </div>
     </div>
@@ -34,7 +30,6 @@
       <div id="squares">
         <div id="squares__flag" class="square"><img src="https://restcountries.eu/data/gbr.svg" id="flag"></img></div>
         
-
         <div id="squares__codes" class="square">
           <span id="alpha2">GB</span>/<span id="alpha3">GBR</span>
         </div>
@@ -55,13 +50,6 @@
             >See list of country codes here...</a
           >
         </div>
-      </div>
-      
-      <div id="errorBox" class="hidden">
-        Invalid Alpha2/Alpha3 country code!
-        <br>
-        <a href="https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes" target="_blank"
-        >See here for a list of Alpha2/Alpha3 codes!</a>
       </div>
     </div>
   </body>
