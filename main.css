@@ -124,10 +124,7 @@ span {
     color: #fff;
     /* background: linear-gradient(45deg, rgb(207, 233, 255), rgb(255, 255, 255)); */
   }
-  .square:hover {
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-    transform: scale(1.001);
-  }
+
   #squares__flag {
     width: 100%;
   }
