@@ -14,7 +14,6 @@ body {
 }
 
 body {
-  font-family: sans-serif;
   max-width: 100vw;
   min-height: 100%;
 }
@@ -23,7 +22,7 @@ body {
 #header {
   display: flex;
   flex-direction: column;
-  height: 10vh;
+  height: 100px;
 }
 
 h1 {
@@ -41,7 +40,7 @@ h1 {
 
 #dropSearch {
   width: 90%;
-  height: 50px;
+  height: 100%;
   font-size: 1.1em;
   padding: 0 20px;
   border: none;
@@ -49,6 +48,7 @@ h1 {
 
 #submit {
   width: 10%;
+  height: 100%;
   font-size: 100%;
   border: none;
 }
@@ -59,10 +59,7 @@ h1 {
   height: 90vh;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
-  grid-template-rows: 100px 1fr 1fr 1fr 100px;
-  color: #000;
   background-color: #22d1ee;
   text-align: center;
   padding: 20px;
@@ -70,7 +67,6 @@ h1 {
 
 /*COUNTRY DATA STYLING*/
 #name {
-  margin-top: 50px;
   color: #fff;
   font-size: 1.3em;
 }
@@ -83,6 +79,7 @@ span {
   margin-top: 20px;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .square {
@@ -117,8 +114,9 @@ span {
     display: grid;
     grid-gap: 10px;
     max-width: 700px;
+    max-height: 400px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr 1fr 1fr 100px;
+    grid-template-rows: auto 1fr 1fr;
   }
   .square {
     font-size: 1.5rem;
