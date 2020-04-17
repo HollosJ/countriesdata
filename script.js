@@ -9,7 +9,6 @@ const cnt_cptl = document.getElementById("country_cptl");
 const cnt_pop = document.getElementById("country_pop");
 
 const dropDown = document.getElementById("dropSearch");
-const submit = document.getElementById("submit");
 
 let url = "https://restcountries.eu/rest/v2/alpha/";
 let allUrl = "https://restcountries.eu/rest/v2/all";
@@ -23,13 +22,12 @@ initDropdown = () => {
         let newOption = document.createElement("option");
         newOption.value = out[i].alpha3Code;
         newOption.innerText = out[i].name;
+        newOption.classList.add("option");
         dropDown.appendChild(newOption);
       }
     });
 };
-
-//LISTEN FOR SEARCH CLICK
-submit.addEventListener("click", () => {
+search = () => {
   let selected = dropDown.options[dropDown.selectedIndex].value;
 
   fetch(url + selected)
@@ -47,6 +45,10 @@ submit.addEventListener("click", () => {
       cnt_pop.innerHTML = out.population;
     })
     .catch((err) => console.error(err));
+};
+
+dropDown.addEventListener("change", () => {
+  search();
 });
 
 initDropdown();

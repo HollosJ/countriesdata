@@ -39,17 +39,10 @@ h1 {
 }
 
 #dropSearch {
-  width: 90%;
+  width: 100%;
   height: 100%;
   font-size: 1.1em;
   padding: 0 20px;
-  border: none;
-}
-
-#submit {
-  width: 10%;
-  height: 100%;
-  font-size: 100%;
   border: none;
 }
 
@@ -111,9 +104,6 @@ span {
 }
 
 @media (min-width: 700px) {
-  #name {
-    width: 100%;
-  }
   #squares {
     display: grid;
     grid-gap: 10px;
@@ -126,7 +116,6 @@ span {
     font-size: 1.5rem;
     transition: all ease 0.3s;
     color: #fff;
-    /* background: linear-gradient(45deg, rgb(207, 233, 255), rgb(255, 255, 255)); */
   }
 
   #squares__flag {
