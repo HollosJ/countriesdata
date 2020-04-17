@@ -62,8 +62,8 @@ h1 {
   align-items: center;
   background: linear-gradient(
     0deg,
-    rgba(9, 73, 121, 1) 0%,
-    rgba(0, 254, 255, 1) 100%
+    rgba(0, 141, 246, 1) 0%,
+    rgba(91, 249, 255, 1) 100%
   );
   text-align: center;
   padding: 20px;
@@ -71,7 +71,7 @@ h1 {
 
 /*COUNTRY DATA STYLING*/
 #name {
-  color: #fff;
+  color: #0e153a;
   font-size: 1.3em;
 }
 span {
