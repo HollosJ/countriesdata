@@ -29,7 +29,6 @@ initDropdown = () => {
 };
 search = () => {
   let selected = dropDown.options[dropDown.selectedIndex].value;
-
   fetch(url + selected)
     .then((res) => res.json())
     .then((out) => {
@@ -42,7 +41,7 @@ search = () => {
       cnt_reg.innerHTML = out.region + ": ";
       cnt_subreg.innerHTML = out.subregion;
       cnt_cptl.innerHTML = out.capital;
-      cnt_pop.innerHTML = out.population;
+      cnt_pop.innerHTML = out.population.toLocaleString("en-US");
     })
     .catch((err) => console.error(err));
 };
