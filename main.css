@@ -80,11 +80,11 @@ span {
 
 #squares__flag {
   width: 100%;
-  max-width: 80vw;
 }
 
 #flag {
   max-height: 200px;
+  max-width: 100%;
 }
 
 #country_subreg {
